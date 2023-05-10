@@ -1,0 +1,96 @@
+html {
+	height: 100%;
+}
+body {
+	background-color:#1c887b; 
+	background-image: linear-gradient(360deg, #1c887b 0%, #aee6cf 100%);
+  
+}
+
+.patBox {
+display: flex;
+margin: 2vh auto;
+background-color: rgba(255,255,255,0.2);
+padding: 15px;
+}
+
+.flex {
+  display: flex;
+}
+.flex div {
+  margin: 0 15px;
+}
+.dripImage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: auto;
+  width: 50px;
+
+}
+
+.dripClass {
+min-height: 80px;
+}
+
+#logo {
+  display: block;
+  margin: 3vh auto 5vh auto;
+  max-width: 150px;
+}
+
+#logoContainer h1 {
+ text-align: center;
+ font-family: 'Roboto', sans-serif;
+}
+#logoContainer {
+ margin: 2vh auto;
+}
+
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item a {
+  font-weight: 500;
+}
+
+.form-inline {
+	margin-bottom: 0;
+}
+
+.form-inline button{
+	font-weight: 500;
+}
+
+.checkStatus{
+  text-align: center;
+}
+
+.checkStatus form input{
+  width: 300px;
+  height: 40px;
+  border: 1px solid #0c0d0d;
+  box-shadow: none;
+}
+
+.checkStatus form button{
+  outline: none;
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: #145b72;
+  color: #fff;
+}
+
+.tableStyle{
+  margin-top: 50px;
+  align-items: center;
+}
+
+.tableStyle tr td{
+  width: 150px;
+  border: 1px solid #000;
+}
