@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FluidSense</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./scr/add.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="index.html">HOME</span></a>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">CREATE ENTRY</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="Show.html">STATUS</a>
+	      </li>
+	      <li class="nav-item ">
+	        <a class="nav-link" href="Remove.html">DELETE ENTRY</a>
+	      </li>
+	    </ul>
+			<form class="form-inline">
+				<button class="btn btn-light" type="button" id="logout">SIGN OUT</button>
+			</form>
+	  	</div>
+		</nav>
+
+  <div class="container">
+    <div id="logoContainer" class="container">
+      <img id="logo" src="drip.png">
+    </div>
+    
+    <div class="wrapper">
+      <div class="company-info">
+       
+       
+      </div>
+      <div class="contact">
+        
+        <div class="alert" id="alert"></div>
+        <form id="createEntry">
+          <p >
+            <label>Patient Name</label>
+            <input type="text" name="patientname" id="patientname" required>
+          </p>
+
+	    <p >
+            <label>Age</label>
+            <input type="number" name="age" id="age">
+          </p>
+
+          <div class="dropdown">
+              <label for="gender">Gender:</label>
+              <select id="gender" name="gender">
+                <option value="None">    </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+              </select>
+          </div>
+
+          <p >
+            <label>Address</label>
+            <input type="text" name="address" id="address">
+          </p>
+           
+          <div class="dropdown">
+            <label for="gender">Blood Group:</label>
+            <select id="Blood" name="Group">
+              <option value="None">    </option>
+              <option value="a+ve">A+ve</option>
+              <option value="a-ve">A-ve</option>
+              <option value="b+ve">B+ve</option>
+              <option value="b-ve">B-ve</option>
+              <option value="o+ve">O+ve</option>
+              <option value="o-ve">O-ve</option>
+              <option value="ab+ve">AB+ve</option>
+              <option value="ab-ve">AB-ve</option>
+            </select>
+        </div>
+
+	    <p >
+            <label>Mobile Number</label>
+            <input type="tel" name="mobilenumber" id="mobilenumber"  >
+          </p>
+
+          <p >
+            <label>Emergency Mobile Number</label>
+            <input type="tel " name="emergencymobilenumber" id="emergencymobilenumber" >
+          </p>
+
+          <p >
+            <label>Previous Medical History</label>
+            <input type="text" name="medicalhistory" id="medicalhistory">
+          </p>
+
+         <p >
+            <label>Symptoms</label>
+            <input type="text" name="symptoms" id="symptoms">
+         </p>
+         
+          <p >
+            <label>Consulting Doctor's Name</label>
+            <input type="text" name="doctorname" id="doctorname">
+          </p>
+
+          <p >
+            <label>Room Number</label>
+            <input type="number" name="roomnumber" id="roomnumber">
+          </p>
+
+          <p >
+            <label>Bed Number</label>
+            <input type="number" name="bednumber" id="bednumber">
+          </p>
+         
+
+
+          
+          
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="./scr/main.js"></script>
+</body>
+</html>

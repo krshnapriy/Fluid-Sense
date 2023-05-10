@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="../css/login.css"> -->
+		<link rel="stylesheet" type="text/css" href="./scr/op.css"/>
+
+    <title>FluidSense</title>
+  </head>
+  <body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item ">
+	        <a class="nav-link" href="AddPatient.html">CREATE ENTRY</a>
+	      </li>
+	      <li class="nav-item ">
+	        <a class="nav-link" href="Show.html">STATUS</a>
+	      </li>
+	      <li class="nav-item ">
+	        <a class="nav-link" href="#">DELETE ENTRY</a>
+	      </li>
+	    </ul>
+			<form class="form-inline">
+				<button class="btn btn-light" type="button" id="logout">SIGN OUT</button>
+			</form>
+	  	</div>
+		</nav>
+		<div id="logoContainer" class="container">
+			<img id="logo" src="drip.png">
+		</div>
+		<div class="container">
+			<div onClick="location.href='AddPatient.html'">
+				<div>
+				<i class="fa fa-plus-square" style="font-size:36px;"></i><br>
+				CREATE NEW ENTRY</div>
+			</div>
+			<div onClick="location.href='Show.html'">
+				<div><i class="fa fa-user-md" style="font-size:36px;"></i> <br>
+					CHECK FOR ASSISTANCE</div>
+			</div>
+			<div onClick="location.href='Remove.html'">
+					<div><i class="fa fa-trash" style="font-size:36px"></i><br>
+					DELETE ENTRY</div>
+			</div>
+		</div>
+  </body>
+	</html>
